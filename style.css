@@ -1,0 +1,676 @@
+
+/* =================================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+/* Remove as margens padrão e ajusta os elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilização geral da página */
+body {
+    margin: 0;
+    background-color: #EAF3FF;
+    font-family: 'Merriweather', serif;
+    color: #203B5C;
+    text-align: center;
+}
+
+/* Navegação suave entre as seções */
+html {
+    scroll-behavior: smooth;
+}
+
+/* =================================
+   CABEÇALHO E MENU
+================================= */
+
+header {
+    padding: 20px 8%;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(32, 59, 92, 0.08);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #203B5C;
+    font-size: 22px;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #203B5C;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3976C6;
+}
+
+/* =================================
+   CONTEÚDO PRINCIPAL
+================================= */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    padding: 45px 0;
+    scroll-margin-top: 20px;
+}
+
+h1 {
+    color: #3976C6;
+    font-size: 38px;
+}
+
+h2 {
+    color: #203B5C;
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+/* =================================
+   APRESENTAÇÃO INICIAL
+================================= */
+
+.apresentacao {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 450px;
+    text-align: left;
+}
+
+.texto-apresentacao {
+    flex: 1;
+}
+
+.boas-vindas {
+    font-family: 'Playfair Display', serif;
+    color: #3976C6;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.texto-apresentacao h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 38px;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+
+.texto-apresentacao h1 span {
+    color: #3976C6;
+    font-family: inherit;
+}
+
+.descricao-inicial {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 520px;
+}
+
+.foto-apresentacao {
+    width: 240px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    flex-shrink: 0;
+    display: block;
+}
+
+/* =================================
+   BOTÕES DOS PROJETOS
+================================= */
+
+button {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.botao-projetos {
+    margin-top: 15px;
+    padding: 13px 24px;
+    border: none;
+    border-radius: 25px;
+    background-color: #3976C6;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.botao-projetos:hover {
+    background-color: #203B5C;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(32, 59, 92, 0.18);
+}
+
+/* =================================
+   CARROSSEL PROFISSIONAL
+================================= */
+
+.carrossel-profissional {
+    max-width: 750px;
+    margin: 35px auto 0;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 3px 12px rgba(32, 59, 92, 0.08);
+    text-align: left;
+}
+
+.slides-profissionais {
+    position: relative;
+}
+
+.slide-profissional {
+    display: none;
+    animation: aparecer 0.5s ease;
+}
+
+.slide-profissional.ativo {
+    display: block;
+}
+
+.slide-profissional h3 {
+    color: #3976C6;
+    font-family: 'Merriweather', serif;
+    font-size: 23px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.slide-profissional p {
+    font-size: 15px;
+    line-height: 1.9;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Animação de entrada dos slides */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateX(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* =================================
+   CONTROLES DO CARROSSEL PROFISSIONAL
+================================= */
+
+.controles-carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.seta-carrossel {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #EAF3FF;
+    color: #3976C6;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.seta-carrossel:hover {
+    background-color: #C5DCFA;
+    transform: scale(1.08);
+}
+
+.indicadores-carrossel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.indicador {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #C5DCFA;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.indicador.ativo {
+    width: 25px;
+    border-radius: 10px;
+    background-color: #3976C6;
+}
+
+/* =================================
+   PARTE PESSOAL
+================================= */
+
+.introducao-pessoal {
+    max-width: 800px;
+    margin: 20px auto 0;
+}
+
+/* Organiza os dois blocos lado a lado */
+.carrosseis-pessoais {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    margin-top: 35px;
+}
+
+/* Cada bloco de conteúdo */
+.bloco-pessoal {
+    flex: 1;
+    min-width: 0;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Títulos dos blocos */
+.bloco-pessoal h3 {
+    color: #3976C6;
+    font-family: 'Merriweather', serif;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+/* =================================
+   TEXTOS DOS CARROSSEIS PESSOAIS
+================================= */
+
+/* Reserva a mesma altura para os dois textos */
+.texto-pessoal {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.texto-pessoal > p {
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* =================================
+   FRASE MUSICAL
+================================= */
+
+.frase-musical {
+    width: 100%;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.frase-musical p {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.6;
+    color: #3976C6;
+    text-align: center;
+}
+
+.frase-musical span {
+    display: block;
+    margin-top: 5px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 11px;
+    color: #203B5C;
+    text-align: center;
+}
+
+/* =================================
+   CARROSSEIS PESSOAIS
+================================= */
+
+.carrossel-pessoal {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* Área que contém as imagens */
+.imagens-pessoais {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+
+/* Todas as imagens */
+.imagem-pessoal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+/* Mostra somente a imagem ativa */
+.imagem-pessoal.ativo {
+    display: block;
+}
+
+/* =================================
+   CONTROLES DOS CARROSSEIS PESSOAIS
+================================= */
+
+.controles-pessoais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* Setas */
+.seta-pessoal {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: #C5DCFA;
+    color: #203B5C;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+/* Indicadores */
+.indicadores-pessoais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Bolinhas */
+.indicador-pessoal {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #C5DCFA;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Bolinha ativa */
+.indicador-pessoal.ativo {
+    background-color: #3976C6;
+    transform: scale(1.2);
+}
+
+/* Efeito ao passar o mouse */
+.seta-pessoal:hover {
+    background-color: #3976C6;
+    color: #FFFFFF;
+}
+
+/* =================================
+   SEÇÃO DE CONTATO
+================================= */
+
+#contato a {
+    color: #3976C6;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contato a:hover {
+    color: #203B5C;
+    text-decoration: underline;
+}
+
+/* =================================
+   JANELA DE AVISO DOS PROJETOS
+================================= */
+
+#modal-projetos {
+    width: min(90%, 430px);
+    padding: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    color: #203B5C;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(32, 59, 92, 0.2);
+}
+
+#modal-projetos::backdrop {
+    background-color: rgba(32, 59, 92, 0.55);
+}
+
+#modal-projetos h2 {
+    color: #3976C6;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+#modal-projetos p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+#fechar-projetos {
+    margin-top: 12px;
+    padding: 11px 25px;
+    border: none;
+    border-radius: 22px;
+    background-color: #3976C6;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#fechar-projetos:hover {
+    background-color: #203B5C;
+}
+
+/* =================================
+   RODAPÉ
+================================= */
+
+footer {
+    padding: 20px;
+    background-color: #C5DCFA;
+}
+
+footer p {
+    margin: 0;
+    font-size: 13px;
+}
+
+/* =================================
+   ADAPTAÇÃO PARA CELULARES
+================================= */
+
+@media (max-width: 768px) {
+
+    /* Ajusta o menu */
+    /* Ajusta o menu para ficar em uma única linha no celular */
+header {
+    padding: 15px 10px;
+}
+
+nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+nav h2 {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 9px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+    /* Ajusta a apresentação inicial */
+    .apresentacao {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .texto-apresentacao h1 {
+        font-size: 30px;
+    }
+
+    .descricao-inicial {
+        margin: auto;
+    }
+
+    .foto-apresentacao {
+        width: 220px;
+        height: 260px;
+    }
+
+    /* Ajusta o título profissional */
+    #sobre-profissional h2 {
+        font-size: 25px;
+    }
+
+    /* Ajusta o cartão do carrossel */
+    .carrossel-profissional {
+        padding: 20px;
+        margin-top: 25px;
+    }
+
+    .slide-profissional h3 {
+        font-size: 20px;
+    }
+
+    .slide-profissional p {
+        font-size: 14px;
+    }
+
+    .seta-carrossel {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Empilha os carrosséis pessoais */
+    .carrosseis-pessoais {
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+
+    .bloco-pessoal {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .carrossel-pessoal {
+        max-width: 300px;
+    }
+
+    /* No celular, os textos ocupam a altura natural */
+    .texto-pessoal {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .texto-pessoal > p {
+        font-size: 14px;
+    }
+}
+
+/* =================================
+   AJUSTE PARA TELAS MUITO PEQUENAS
+================================= */
+
+@media (max-width: 400px) {
+
+    main {
+        padding: 15px;
+    }
+
+    .texto-apresentacao h1 {
+        font-size: 27px;
+    }
+
+    .controles-pessoais {
+        gap: 8px;
+    }
+
+    .indicadores-pessoais {
+        gap: 5px;
+    }
+
+    .indicador-pessoal {
+        width: 7px;
+        height: 7px;
+    }
+}

@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Informações sobre o site -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio | Letícia Caetano</title>
+
+    <!-- Fontes escolhidas para o portfólio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Merriweather:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Conecta o arquivo externo de CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO E MENU DE NAVEGAÇÃO -->
+    <header>
+        <nav>
+            <h2>Meu Portfólio</h2>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre-profissional">Profissional</a></li>
+                <li><a href="#sobre-pessoal">Pessoal</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- APRESENTAÇÃO INICIAL -->
+        <section id="inicio" class="apresentacao">
+
+            <div class="texto-apresentacao">
+
+                <p class="boas-vindas">
+                    Bem-vinda(o) ao meu portfólio!
+                </p>
+
+                <h1>
+                    Oie, eu sou a
+                    <span>Letícia Caetano</span>
+                </h1>
+
+                <p class="descricao-inicial">
+                    Sou estudante de Análise e Desenvolvimento de Sistemas na Fatec Taubaté e, a cada dia, estou explorando um pouco mais o universo da tecnologia e construindo minha jornada na programação :)
+                </p>
+
+                <!-- Botão que abre a mensagem dos projetos -->
+                <button type="button" class="botao-projetos abrir-modal-projetos">
+                    Conheça meus projetos!
+                </button>
+
+            </div>
+
+            <!-- Foto da apresentação -->
+            <img
+                src="imagens/foto-leticia.jpg"
+                alt="Foto de Letícia Caetano"
+                class="foto-apresentacao"
+            >
+
+        </section>
+
+        <!-- PARTE PROFISSIONAL -->
+        <section id="sobre-profissional">
+
+            <h2>Quem é a Letícia no campo profissional?</h2>
+
+            <!-- CARROSSEL PROFISSIONAL -->
+            <div class="carrossel-profissional">
+
+                <div class="slides-profissionais" aria-live="polite">
+
+                    <!-- SLIDE 1: MINHA TRAJETÓRIA -->
+                    <div class="slide-profissional ativo">
+
+                        <h3>Minha trajetória</h3>
+
+                        <p>
+                            Atualmente curso Análise e Desenvolvimento de Sistemas na Fatec Taubaté. Estou me aventurando e explorando cada vez mais a área da tecnologia.
+                        </p>
+
+                        <p>
+                            Tenho grande interesse pela área de programação e ainda estou decidindo entre back-end e front-end. Quem sabe uma dev full stack futuramente, ein?
+                        </p>
+
+                        <p>
+                            A cibersegurança também me chama bastante a atenção. Inclusive, fiz um curso da CISCO em parceria com a Fatec Taubaté durante o terceiro ano do ensino médio. Acredito que meu interesse pela área começou justamente nesse momento.
+                        </p>
+
+                    </div>
+
+                    <!-- SLIDE 2: FORMAÇÃO ACADÊMICA -->
+                    <div class="slide-profissional">
+
+                        <h3>Formação acadêmica</h3>
+
+                        <p>
+                            <strong>Análise e Desenvolvimento de Sistemas</strong>
+                            <br>
+                            Fatec Taubaté
+                        </p>
+
+                        <p>
+                            Atualmente estou cursando o 4º semestre da graduação, desenvolvendo meus conhecimentos e explorando diferentes áreas da tecnologia.
+                        </p>
+
+                        <p>
+                            Previsão de conclusão: 2º semestre de 2027.
+                        </p>
+
+                    </div>
+
+                    <!-- SLIDE 3: CURSOS E CERTIFICAÇÕES -->
+                    <div class="slide-profissional">
+
+                        <h3>Cursos e certificações</h3>
+
+                        <p>
+                            <strong>Curso de Cibersegurança | CISCO</strong>
+                            <br>
+                            2024
+                            <br>
+                            Meu primeiro contato mais aprofundado com a área, que despertou meu interesse por proteção de dados e segurança digital.
+                        </p>
+
+                        <p>
+                            <strong>Método Kanban | Udemy</strong>
+                            <br>
+                            2026
+                            <br>
+                            Introdução à metodologia Kanban e à organização visual de tarefas e atividades.
+                        </p>
+
+                        <p>
+                            <strong>Scrum Básico | Udemy</strong>
+                            <br>
+                            2026
+                            <br>
+                            Conhecimentos introdutórios sobre Scrum e sua utilização na organização de projetos.
+                        </p>
+
+                        <p>
+                            <strong>O que é DevOps? | Udemy</strong>
+                            <br>
+                            2026
+                            <br>
+                            Introdução ao conceito de DevOps e à relação entre desenvolvimento de software e operações.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- CONTROLES DO CARROSSEL PROFISSIONAL -->
+                <div class="controles-carrossel">
+
+                    <button type="button" class="seta-carrossel anterior" aria-label="Slide anterior">
+                        &#10094;
+                    </button>
+
+                    <div class="indicadores-carrossel">
+
+                        <button type="button" class="indicador ativo" aria-label="Ir para minha trajetória"></button>
+
+                        <button type="button" class="indicador" aria-label="Ir para formação acadêmica"></button>
+
+                        <button type="button" class="indicador" aria-label="Ir para cursos e certificações"></button>
+
+                    </div>
+
+                    <button type="button" class="seta-carrossel proximo" aria-label="Próximo slide">
+                        &#10095;
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PARTE PESSOAL -->
+        <section id="sobre-pessoal">
+
+            <h2>E a Letícia fora da área profissional?</h2>
+
+            <p class="introducao-pessoal">
+                Por trás dos códigos, cursos e tecnologias existem muitas coisas pelas quais sou apaixonada! Nesse espaço quero compartilhar um pouquinho mais do que gosto de fazer e dos meus interesses pessoais :)
+            </p>
+
+            <div class="carrosseis-pessoais">
+
+                <!-- CARROSSEL DE MÚSICA -->
+                <div class="bloco-pessoal" id="carrossel-musica">
+
+                    <h3>Música ♫</h3>
+
+                    <!-- Área de texto com altura compartilhada -->
+                    <div class="texto-pessoal">
+
+                        <p>
+                            Tenho uma grande paixão por música e acredito que não tem como falar sobre mim sem falar dela também. Tenho um monte de playlists no Spotify, inclusive! Meus artistas favoritos são Harry Styles, Louis Tomlinson e Rita Lee, mas não me prendo a um só estilo: escuto de tudo!
+                        </p>
+
+                        <div class="frase-musical">
+                            <p>“A noite é uma criança distraída.”</p>
+                            <span>Rita Lee · Coisas da Vida</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Imagens de música -->
+                    <div class="carrossel-pessoal">
+
+                        <div class="imagens-pessoais">
+
+                            <img src="imagens/musica-1.jpg" alt="Música e artistas favoritos" class="imagem-pessoal ativo">
+                            <img src="imagens/musica-2.jpg" alt="Artista musical favorito" class="imagem-pessoal">
+                            <img src="imagens/musica-3.jpg" alt="Artista musical favorito" class="imagem-pessoal">
+                            <img src="imagens/musica-4.jpg" alt="Artista musical favorito" class="imagem-pessoal">
+                            <img src="imagens/musica-5.jpg" alt="Artista musical favorito" class="imagem-pessoal">
+                            <img src="imagens/musica-6.jpg" alt="Artista musical favorito" class="imagem-pessoal">
+                            <img src="imagens/musica-7.jpg" alt="Artista musical favorito" class="imagem-pessoal">
+
+                        </div>
+
+                        <div class="controles-pessoais">
+
+                            <button type="button" class="seta-pessoal anterior" aria-label="Imagem anterior">
+                                &#10094;
+                            </button>
+
+                            <div class="indicadores-pessoais">
+
+                                <button type="button" class="indicador-pessoal ativo" aria-label="Imagem 1"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 2"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 3"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 4"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 5"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 6"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 7"></button>
+
+                            </div>
+
+                            <button type="button" class="seta-pessoal proximo" aria-label="Próxima imagem">
+                                &#10095;
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CARROSSEL DE HOBBIES -->
+                <div class="bloco-pessoal" id="carrossel-hobbies">
+
+                    <h3>Hobbies ♡</h3>
+
+                    <!-- Área de texto com altura compartilhada -->
+                    <div class="texto-pessoal">
+
+                        <p>
+                            No meu tempo livre gosto muito de ler, assistir filmes e séries. Confesso que adoro rever histórias que já conheço! Minhas séries favoritas são Supernatural e Brooklyn Nine-Nine. Entre os filmes, estão Como Perder um Homem em 10 Dias, Esqueceram de Mim 2: Perdido em Nova York e Capitão América 2: O Soldado Invernal. Já meus livros favoritos são Os Sete Maridos de Evelyn Hugo e Daisy Jones & The Six.
+                        </p>
+
+                    </div>
+
+                    <!-- Imagens de hobbies -->
+                    <div class="carrossel-pessoal">
+
+                        <div class="imagens-pessoais">
+
+                            <img src="imagens/hobbies-1.jpg" alt="Livro ou hobby favorito" class="imagem-pessoal ativo">
+                            <img src="imagens/hobbies-2.jpg" alt="Filme ou série favorita" class="imagem-pessoal">
+                            <img src="imagens/hobbies-3.jpg" alt="Livro ou hobby favorito" class="imagem-pessoal">
+                            <img src="imagens/hobbies-4.jpg" alt="Filme ou série favorita" class="imagem-pessoal">
+                            <img src="imagens/hobbies-5.jpg" alt="Livro ou hobby favorito" class="imagem-pessoal">
+                            <img src="imagens/hobbies-6.jpg" alt="Filme ou série favorita" class="imagem-pessoal">
+                            <img src="imagens/hobbies-7.jpg" alt="Livro ou hobby favorito" class="imagem-pessoal">
+                            <img src="imagens/hobbies-8.jpg" alt="Filme ou série favorita" class="imagem-pessoal">
+                            <img src="imagens/hobbies-9.jpg" alt="Livro ou hobby favorito" class="imagem-pessoal">
+
+                        </div>
+
+                        <div class="controles-pessoais">
+
+                            <button type="button" class="seta-pessoal anterior" aria-label="Imagem anterior">
+                                &#10094;
+                            </button>
+
+                            <div class="indicadores-pessoais">
+
+                                <button type="button" class="indicador-pessoal ativo" aria-label="Imagem 1"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 2"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 3"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 4"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 5"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 6"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 7"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 8"></button>
+                                <button type="button" class="indicador-pessoal" aria-label="Imagem 9"></button>
+
+                            </div>
+
+                            <button type="button" class="seta-pessoal proximo" aria-label="Próxima imagem">
+                                &#10095;
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SEÇÃO DE PROJETOS -->
+        <section id="projetos">
+
+            <h2>Meus projetos!</h2>
+
+            <p>
+                Conheça os projetos que estou desenvolvendo durante minha jornada!
+            </p>
+
+            <!-- Segundo botão: abre a mesma mensagem do botão inicial -->
+            <button type="button" class="botao-projetos abrir-modal-projetos">
+                Conheça meus projetos!
+            </button>
+
+        </section>
+
+        <!-- SEÇÃO DE CONTATO -->
+        <section id="contato">
+
+            <h2>Vamos nos conectar?</h2>
+
+            <p>
+                Gostou de conhecer um pouco sobre mim? Entre em contato e vamos conversar ;)
+            </p>
+
+            <p>
+                <a href="https://www.linkedin.com/in/let%C3%ADcia-caetano/" target="_blank" rel="noopener noreferrer">
+                    Meu perfil no LinkedIn
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- JANELA DE AVISO DOS PROJETOS -->
+    <dialog id="modal-projetos">
+
+        <h2>Meus projetos estão a caminho!</h2>
+
+        <p>
+            Ainda estou desenvolvendo meus primeiros projetos. Em breve, você poderá conhecer um pouco mais do que estou construindo!
+        </p>
+
+        <button type="button" id="fechar-projetos">
+            Entendi!
+        </button>
+
+    </dialog>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Desenvolvido por Letícia Caetano | 2026</p>
+    </footer>
+
+    <!-- Conexão com o arquivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
