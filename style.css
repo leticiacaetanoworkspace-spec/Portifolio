@@ -192,20 +192,26 @@ button {
     text-align: left;
 }
 
+
 .slides-profissionais {
     position: relative;
+    height: 350px;
 }
 
 .slide-profissional {
     display: none;
+    height: 100%;
     animation: aparecer 0.5s ease;
 }
 
 .slide-profissional.ativo {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .slide-profissional h3 {
+    flex-shrink: 0;
     color: #3976C6;
     font-family: 'Merriweather', serif;
     font-size: 23px;
@@ -219,6 +225,13 @@ button {
     text-align: left;
     margin-bottom: 15px;
 }
+
+/* Área de rolagem do texto */
+.slide-profissional.ativo {
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
 
 /* Animação de entrada dos slides */
 @keyframes aparecer {
@@ -644,6 +657,10 @@ nav a {
 
     .texto-pessoal > p {
         font-size: 14px;
+    }
+
+    .slides-profissionais {
+    height: 350px;
     }
 }
 
